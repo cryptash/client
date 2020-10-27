@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ciphen/.idea/ciphen.iml" filepath="$PROJECT_DIR$/../ciphen/.idea/ciphen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cryptash.iml" filepath="$PROJECT_DIR$/.idea/cryptash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../doomer/.idea/doomer.iml" filepath="$PROJECT_DIR$/../doomer/.idea/doomer.iml" />
+    </modules>
+  </component>
+</project>

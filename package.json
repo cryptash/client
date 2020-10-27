@@ -1,0 +1,62 @@
+{
+  "name": "cryptash",
+  "version": "0.0.0",
+  "description": "Simple encrypted chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "cd client && cross-env NODE_ENV=development webpack serve",
+    "lint:fix": "eslint \"{,!(node_modules)/**/}*.{js,jsx}\" --fix",
+    "build:client": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "eslintConfig": {
+    "extends": "google",
+    "parser": "babel-eslint",
+    "rules": {
+      "semi": [
+        2,
+        "never"
+      ],
+      "camelcase": "off",
+      "object-curly-spacing": "off",
+      "require-jsdoc": "off",
+      "linebreak-style": "off"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladdenisov/cryptash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladdenisov/cryptash/issues"
+  },
+  "homepage": "https://github.com/vladdenisov/cryptash#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.12.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^5.0.0-alpha.6",
+    "mini-css-extract-plugin": "^1.2.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "doomerjs": "1.0.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
