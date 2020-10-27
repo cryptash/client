@@ -1,4 +1,5 @@
-import $ from 'doomerjs'
+// import $ from 'doomerjs'
+
 import { DomListener } from '../../core/DomListener'
 
 export class Cryptash extends DomListener {
@@ -13,10 +14,9 @@ export class Cryptash extends DomListener {
   }
   render() {
     this.components.forEach((Component) => {
-      const _ = new Component({ name: 'HELLO' })
-      const div = $.create('div', _.className)
-      $(div).insertNodes(_.toSingleNode())
-      this.$el.appendChild(div)
+      console.log(this.$el)
+      const _ = new Component(this.$el)
+      _.renderToRoot()
     })
     this.componentDidMount()
   }

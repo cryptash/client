@@ -4,9 +4,8 @@ import {Component} from '@core/Component'
 import {LoginFormComponent} from './LoginForm'
 
 export class LoginComponent extends Component {
-  constructor(props) {
-    super()
-    this.props = props
+  constructor($root) {
+    super($root)
     this.className = 'login-main'
     this.name = 'Login'
     console.log(this)
