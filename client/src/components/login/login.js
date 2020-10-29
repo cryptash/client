@@ -13,7 +13,7 @@ export class LoginComponent extends Component {
   }
 
   render() {
-    this.childrenComponents.push(
+    this.children.push(
         {Instance: LoginFormComponent, props: {
           name: 'Hello',
         }})
