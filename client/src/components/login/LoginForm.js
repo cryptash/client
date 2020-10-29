@@ -14,7 +14,7 @@ export class LoginFormComponent extends Component {
     console.log(this.state)
   }
   render($root) {
-    const $form_div = $.create('div', 'LoginForm-div')
+    // const $form_div = $.create('div', 'LoginForm-div')
     const $name_input = $.create('input', 'login--input')
     const $password_input = $.create('input', 'password--input')
     const $submit_button = $.create('button', 'submit--button')
@@ -25,7 +25,7 @@ export class LoginFormComponent extends Component {
             ...this.state,
             login: e.target.value,
           })
-        }).attr('placeholder', 'Login')
+        }).attr('placeholder', this.state.login)
     $($password_input)
         .attr('type', 'password')
         .on('keyup', (e) => {
@@ -33,15 +33,14 @@ export class LoginFormComponent extends Component {
             ...this.state,
             password: e.target.value,
           })
-        }).attr('placeholder', 'Password')
+        }).attr('placeholder', this.state.login)
     $($submit_button).on('click', () => this.handleSubmit()).setText('Login')
     const $h1 = $.create('h1', 'title')
-    $($h1).setText(this.state.password)
-    this.childrenNodes.push($h1, $name_input, $password_input, $submit_button)
-    console.log(this.childrenNodes)
-    this.childrenNodes.forEach((e) => {
-      $($form_div).appendChild(e)
-    })
-    $root.appendChild($form_div)
+    $h1.innerText = this.state.login
+    this.children.push($h1, $name_input, $password_input, $submit_button)
+    console.log(this.children)
+    // this.childrenNodes.forEach((e) => {
+    //   $($form_div).appendChild(e)
+    // })
   }
 }
