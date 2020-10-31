@@ -1,5 +1,6 @@
 import {updateTextElement} from '../Text/updateTextElement'
 import {update} from './update'
+import {render} from './render'
 
 const updateChildren = (prevChildren, nextChildren, parent) => {
   if (!Array.isArray(nextChildren)) {
@@ -15,7 +16,11 @@ const updateChildren = (prevChildren, nextChildren, parent) => {
     if (typeof nextChild === 'string' && typeof prevChild === 'string') {
       updateTextElement(prevChild, nextChild, parent)
     } else {
-      update(prevChild, nextChild)
+      if (!prevChild) {
+        render(nextChild, parent)
+      } else {
+        update(prevChild, nextChild)
+      }
     }
   }
 }
