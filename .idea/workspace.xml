@@ -11,31 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Component/Component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Component/updateComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Element/createElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Element/updateElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Text/mountTextElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Text/updateTextElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Utils/render.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Utils/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/core/Utils/updateChildren.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Library/Headings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cryptash/Cryptash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/isLoggined/isLoggined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/login/LoginForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/login/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Diff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/DomListener.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Component/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/Component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Element/updateElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/updateElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Text/mountTextElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Text/mountTextElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Text/updateTextElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Text/updateTextElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603641737150</updated>
-      <workItem from="1603641738327" duration="48056000" />
+      <workItem from="1603641738327" duration="49618000" />
     </task>
     <servers />
   </component>
@@ -171,13 +158,15 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1603827168966" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1603793061149">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1604141510373">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604141510373" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603793061149" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603974996838">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604142202764">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604142202764" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603974996838" />
   </component>
 </project>

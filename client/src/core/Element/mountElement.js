@@ -6,10 +6,16 @@ const mountElement = (vElement, parent) => {
   if (vElement.props.className) {
     domNode.className = vElement.props.className
   }
+  const isProperty = (key) => key !== 'children'
+  Object.keys(vElement.props)
+      .filter(isProperty)
+      .forEach((name) => {
+        domNode[name] = vElement.props[name]
+      })
   if (vElement.props.children) {
     vElement.props.children.forEach((child) => {
       console.log(vElement.props.children)
-      render(child, parent)
+      render(child, domNode)
     })
   }
   parent.appendChild(domNode)

@@ -1,6 +1,5 @@
 const mountTextElement = (vText, parent) => {
-  const domNode = document.createTextNode(vText)
-  parent.appendChild(domNode)
-  return domNode
+  parent.textContent = vText
+  return vText
 }
 export {mountTextElement}

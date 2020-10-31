@@ -8,10 +8,12 @@ const mountComponent = (vComponent, parent) => {
   const vNode = instance.render()
   const dom = render(vNode, parent)
 
-  vComponent.__instance = instance
+  vComponent._instance = instance
   vComponent.dom = dom
 
-  instance.__parentNode = parent
+  instance._parentNode = parent
+  instance._currentElement = vNode
+
   parent.appendChild(dom)
   return dom
 }
