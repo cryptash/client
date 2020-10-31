@@ -1,8 +1,7 @@
 import './scss/index.scss'
-import { Cryptash } from './components/cryptash/Cryptash'
-import {LoginComponent} from './components/login/login'
+import Cryptash from './components/Cryptash'
+import App from '@core/App'
 
-const app = new Cryptash('#app', {
-  components: [LoginComponent],
-})
-app.render()
+const CryptashComp = App.createElement(Cryptash, {name: 'Hello World'})
+
+App.render(CryptashComp, document.getElementById('app'))
