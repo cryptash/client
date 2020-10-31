@@ -16,9 +16,13 @@ class Component {
     this._pendingState = this.state
     this.updateComponent()
   }
+
   shouldComponentUpdate() {
     return true
   }
+
+  componentDidMount() {}
+
   updateComponent() {
     const prevState = this.state
     const prevElement = this._currentElement
@@ -33,6 +37,7 @@ class Component {
 
     update(prevElement, nextElement, this._parentNode)
   }
+
   render() {}
 }
 export {Component}

@@ -1,26 +1,39 @@
 import App from '@core/App'
-import {Component} from '../core/Component/Component'
+import {Preloader} from './Preloader'
 
-class Cryptash extends Component {
+class Cryptash extends App.Component {
   constructor(props) {
     super(props)
     this.state = {
-      name: '',
+      jokes: [],
     }
   }
+  getJokesToState() {
+    fetch('https://official-joke-api.appspot.com/random_ten')
+        .then((res) => res.json())
+        .then((res) => this.setState({jokes: res}))
+  }
+  componentDidMount() {
+    this.getJokesToState()
+  }
+
   render() {
-    if (this.state.name === 'LOL') {
-      return App.createElement('h1', {className: 'lol'}, 'HELLO SUKA')
+    const mainDiv = App.createElement('div', {className: 'main-div'})
+    if (!this.state.jokes[0]) {
+      mainDiv.props.children.push(App.createElement(Preloader, {}))
     }
-    const _ = App.createElement('div', {className: 'main'})
-    // const h1 = App.createElement('h1', {className: 'title'}, 'Hello')
-    // const a = App.createElement('a', {href: '#'}, 'Hello')
-    // eslint-disable-next-line max-len
-    const input = App.createElement('input', {type: 'text', placeholder: 'enter text', onkeyup: (e) => this.setState({name: e.target.value})})
-    _.props.children.push(input)
-    console.log(this.state)
-    _.props.children.push(App.createElement('a', {href: '#'}, this.state.name))
-    return _
+    if (this.state.jokes[0]) {
+      const updateButton = App.createElement('button', {
+        onclick: () => this.getJokesToState(),
+      }, 'New Jokes')
+      mainDiv.props.children.push(updateButton)
+      this.state.jokes.forEach((e) => mainDiv.props.children.push(
+          App.createElement('h1', {}, e.setup),
+          App.createElement('h2', {}, e.punchline),
+          App.createElement('br', {})
+      ))
+    }
+    return mainDiv
   }
 }
 export default Cryptash

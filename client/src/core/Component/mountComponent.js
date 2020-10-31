@@ -15,6 +15,9 @@ const mountComponent = (vComponent, parent) => {
   instance._currentElement = vNode
 
   parent.appendChild(dom)
+
+  instance.componentDidMount()
+
   return dom
 }
 
