@@ -1,5 +1,5 @@
 import App from '@core/App'
-
+import './index.scss'
 class Preloader extends App.Component {
   constructor(props) {
     super(props)
