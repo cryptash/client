@@ -13,7 +13,13 @@
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../ciphen/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Component/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/Component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +37,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -63,7 +70,7 @@
       <recent name="C:\Projects\cryptash\client\src\core\Component" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../ciphen/package.json" />
       <command value="run" />
@@ -119,12 +126,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="222" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604139294961">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="222" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604139294961" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1604149983916">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149983916" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1603643331818">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -149,6 +161,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1603827168966" />
+    <state x="615" y="325" key="VCS.ChangelistChooser" timestamp="1604149855743">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="615" y="325" key="VCS.ChangelistChooser/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149855743" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1604141510373">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

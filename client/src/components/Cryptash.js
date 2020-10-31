@@ -9,18 +9,7 @@ class Cryptash extends Component {
     }
   }
   render() {
-    if (this.state.name === 'LOL') {
-      return App.createElement('h1', {className: 'lol'}, 'HELLO SUKA')
-    }
-    const _ = App.createElement('div', {className: 'main'})
-    // const h1 = App.createElement('h1', {className: 'title'}, 'Hello')
-    // const a = App.createElement('a', {href: '#'}, 'Hello')
-    // eslint-disable-next-line max-len
-    const input = App.createElement('input', {type: 'text', placeholder: 'enter text', onkeyup: (e) => this.setState({name: e.target.value})})
-    _.props.children.push(input)
-    console.log(this.state)
-    _.props.children.push(App.createElement('a', {href: '#'}, this.state.name))
-    return _
+    return App.createElement('div', {className: 'div--main'}, 'Hello World')
   }
 }
 export default Cryptash

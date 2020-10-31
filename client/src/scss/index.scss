@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 body {
     background: white;
     height: 100vh;
     margin: 0;
-    padding: 10px;
     font-family: 'Roboto', sans-serif;
+}
+#app {
+    height: 100vh;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div--main {
+    font-size: 96px;
 }

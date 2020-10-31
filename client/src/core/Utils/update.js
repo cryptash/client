@@ -4,7 +4,6 @@ import {updateTextElement} from '../Text/updateTextElement'
 import {render} from './render'
 
 const update = (prevElement, nextElement) => {
-  console.log(prevElement, nextElement)
   if (prevElement.type) {
     if (prevElement.type === nextElement.type) {
       if (typeof prevElement.type === 'string') {

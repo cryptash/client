@@ -1,7 +1,6 @@
 import {render} from '../Utils/render'
 
 const mountComponent = (vComponent, parent) => {
-  console.log(vComponent)
   const Component = vComponent.type
   const {props} = vComponent
   const instance = new Component(props)

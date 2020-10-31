@@ -12,7 +12,6 @@ class Component {
 
   setState(newState) {
     this.state = Object.assign({}, this.state, newState)
-    console.log(this.state)
     this._pendingState = this.state
     this.updateComponent()
   }

@@ -14,7 +14,6 @@ const mountElement = (vElement, parent) => {
       })
   if (vElement.props.children) {
     vElement.props.children.forEach((child) => {
-      console.log(vElement.props.children)
       render(child, domNode)
     })
   }
