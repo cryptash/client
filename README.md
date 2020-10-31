@@ -1,2 +1,2 @@
-# excel-js
-Code from excel course
+# Cryptash
+Simple encrypted chat

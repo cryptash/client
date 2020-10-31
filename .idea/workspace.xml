@@ -11,18 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/core/Utils/updateChildren.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Component/Component.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/Component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Element/updateElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/updateElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Text/mountTextElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Text/mountTextElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Text/updateTextElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Text/updateTextElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603641737150</updated>
-      <workItem from="1603641738327" duration="49618000" />
+      <workItem from="1603641738327" duration="49741000" />
     </task>
     <servers />
   </component>
