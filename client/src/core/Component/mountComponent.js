@@ -13,8 +13,9 @@ const mountComponent = (vComponent, parent) => {
   instance._parentNode = parent
   instance._currentElement = vNode
 
-  parent.appendChild(dom)
-
+  if (dom) {
+    parent.appendChild(dom)
+  }
   instance.componentDidMount()
 
   return dom

@@ -11,17 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Login/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/core/Router/Link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/core/Router/Redirect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/core/Router/Router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Preloader/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Preloader/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

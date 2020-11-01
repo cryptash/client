@@ -1,5 +1,6 @@
 import App from '@core/App'
 import './index.scss'
+import {Link} from '../../core/Router/Link'
 
 
 class Login extends App.Component {
@@ -88,11 +89,11 @@ class Login extends App.Component {
       className: 'login--signup',
     },
     App.createElement('span', {}, 'No account? '),
-    App.createElement('a', {
-      href: '#',
-      className: 'login--signup-btn'},
-    'Create account')
-    )
+    App.createElement(Link,
+        {to: '/register',
+          className: 'login--signup-btn',
+          children: ['Create Account']},
+    ))
 
     const main = App.createElement('div',
         {className: 'login--div'},

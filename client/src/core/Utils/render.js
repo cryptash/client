@@ -3,6 +3,9 @@ import {mountTextElement} from '../Text/mountTextElement'
 import {mountElement} from '../Element/mountElement'
 
 const render = (vElement, parent) => {
+  if (vElement === null) {
+    return null
+  }
   if (typeof vElement.type === 'string') {
     console.log('element', vElement)
     return mountElement(vElement, parent)

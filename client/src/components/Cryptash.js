@@ -2,6 +2,9 @@ import App from '@core/App'
 import {Component} from '../core/Component/Component'
 import {Preloader} from './Preloader'
 import {Login} from './Login'
+import {Route} from '../core/Router/Router'
+import {Register} from './Register'
+import {Redirect} from '../core/Router/Redirect'
 
 class Cryptash extends Component {
   constructor(props) {
@@ -36,11 +39,31 @@ class Cryptash extends Component {
     if (this.state.isLoggined === null) {
       return App.createElement(Preloader, {})
     }
-    if (this.state.isLoggined === false) {
-      return App.createElement(Login, {setToken: this.setToken.bind(this)})
-    } else {
-      return App.createElement('h1', {}, 'Homepage')
-    }
+    return App.createElement('div',
+        {},
+        App.createElement(Route, {
+          path: '/',
+          exact: true,
+          render: (props) => {
+            if (!this.state.isLoggined) {
+              return App.createElement(Redirect, {to: '/login'})
+            }
+          },
+        }),
+        App.createElement(Route, {
+          path: '/login',
+          exact: true,
+          component: Login,
+          props: {
+            setToken: this.setToken.bind(this),
+          },
+        }),
+        App.createElement(Route, {
+          path: '/register',
+          exact: true,
+          component: Register,
+        })
+    )
   }
 }
 export default Cryptash
