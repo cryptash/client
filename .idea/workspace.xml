@@ -11,19 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Router/Link.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Router/Redirect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Router/Router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Component/mountComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Router/Link.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/Link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Router/Redirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/Redirect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -90,7 +90,7 @@ class Login extends App.Component {
     },
     App.createElement('span', {}, 'No account? '),
     App.createElement(Link,
-        {to: '/register',
+        {to: '#/register',
           className: 'login--signup-btn',
           children: ['Create Account']},
     ))

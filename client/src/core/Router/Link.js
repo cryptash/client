@@ -8,7 +8,7 @@ class Link extends Component {
   handleClick(e) {
     e.preventDefault()
     const {to} = this.props
-    history.pushState({}, null, to)
+    window.history.replaceState({}, null, '#/'+to)
   }
   render() {
     console.log(this.props)

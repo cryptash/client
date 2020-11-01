@@ -6,14 +6,20 @@ class Route extends Component {
   constructor(props) {
     super(props)
   }
+  componentDidMount() {
+    window.addEventListener('hashchange', () => {
+      console.log('pop')
+      this.updateComponent()
+    })
+  }
   render() {
     const {
       component,
       props,
       render,
     } = this.props
-    const match = matchPath(window.location.pathname, this.props)
-    console.log(match)
+    const match = matchPath(window.location.hash, this.props)
+    console.log(window.location.hash)
     if (!match) {
       return null
     }

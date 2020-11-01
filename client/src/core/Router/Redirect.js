@@ -6,7 +6,7 @@ class Redirect extends Component {
   }
   componentDidMount() {
     const {to} = this.props
-    window.history.pushState({}, null, to)
+    window.history.replaceState({}, null, to)
   }
 
   render() {

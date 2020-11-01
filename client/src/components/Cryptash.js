@@ -42,16 +42,16 @@ class Cryptash extends Component {
     return App.createElement('div',
         {},
         App.createElement(Route, {
-          path: '/',
+          path: '',
           exact: true,
           render: (props) => {
             if (!this.state.isLoggined) {
-              return App.createElement(Redirect, {to: '/login'})
+              return App.createElement(Redirect, {to: '#/login'})
             }
           },
         }),
         App.createElement(Route, {
-          path: '/login',
+          path: '#/login',
           exact: true,
           component: Login,
           props: {
@@ -59,7 +59,7 @@ class Cryptash extends Component {
           },
         }),
         App.createElement(Route, {
-          path: '/register',
+          path: '#/register',
           exact: true,
           component: Register,
         })
