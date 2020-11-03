@@ -5,7 +5,7 @@ import {Login} from './Login'
 import {Route} from '../core/Router/Router'
 import {Register} from './Register'
 import {Redirect} from '../core/Router/Redirect'
-import {Home} from './Home'
+import {Home} from './Chat'
 
 class Cryptash extends Component {
   constructor(props) {
@@ -70,7 +70,7 @@ class Cryptash extends Component {
       )
     }
     if (this.state.isLoggined) {
-      return App.createElement(Home, {})
+      return App.createElement(Home, {token: this.state.token})
     }
   }
 }
