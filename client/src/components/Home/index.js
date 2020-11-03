@@ -1,8 +1,8 @@
 import {Component} from '../../core/Component/Component'
 import App from '../../core/App'
-import {generateKeyPair} from '../../utils/generateKeyPair'
-import {encryptMessage} from '../../utils/encrypt'
-import {decryptMessage} from '../../utils/decrypt'
+import {generateKeyPair} from '../../utils/encryption/generateKeyPair'
+import {encryptMessage} from '../../utils/encryption/encrypt'
+import {decryptMessage} from '../../utils/encryption/decrypt'
 
 class Home extends Component {
   constructor(props) {
