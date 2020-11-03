@@ -5,6 +5,7 @@ import {Login} from './Login'
 import {Route} from '../core/Router/Router'
 import {Register} from './Register'
 import {Redirect} from '../core/Router/Redirect'
+import {Home} from './Home'
 
 class Cryptash extends Component {
   constructor(props) {
@@ -16,8 +17,9 @@ class Cryptash extends Component {
   }
   setToken(token) {
     console.log(token)
-    this.setState({token})
+    this.setState({token, isLoggined: true})
     localStorage.setItem('token', token)
+    window.history.replaceState({}, null, ' ')
   }
   componentDidMount() {
     if (localStorage.getItem('token')) {
@@ -39,31 +41,37 @@ class Cryptash extends Component {
     if (this.state.isLoggined === null) {
       return App.createElement(Preloader, {})
     }
-    return App.createElement('div',
-        {},
-        App.createElement(Route, {
-          path: '',
-          exact: true,
-          render: (props) => {
-            if (!this.state.isLoggined) {
+    if (this.state.isLoggined === false) {
+      return App.createElement('div',
+          {},
+          App.createElement(Route, {
+            path: '',
+            exact: true,
+            render: (props) => {
               return App.createElement(Redirect, {to: '#/login'})
-            }
-          },
-        }),
-        App.createElement(Route, {
-          path: '#/login',
-          exact: true,
-          component: Login,
-          props: {
-            setToken: this.setToken.bind(this),
-          },
-        }),
-        App.createElement(Route, {
-          path: '#/register',
-          exact: true,
-          component: Register,
-        })
-    )
+            },
+          }),
+          App.createElement(Route, {
+            path: '#/login',
+            exact: true,
+            component: Login,
+            props: {
+              setToken: this.setToken.bind(this),
+            },
+          }),
+          App.createElement(Route, {
+            path: '#/register',
+            exact: true,
+            component: Register,
+            props: {
+              setToken: this.setToken.bind(this),
+            },
+          })
+      )
+    }
+    if (this.state.isLoggined) {
+      return App.createElement(Home, {})
+    }
   }
 }
 export default Cryptash

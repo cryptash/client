@@ -4,6 +4,7 @@ import {updateTextElement} from '../Text/updateTextElement'
 import {render} from './render'
 
 const update = (prevElement, nextElement, parent) => {
+  console.log(prevElement, nextElement)
   if (!prevElement) {
     render(nextElement, parent)
     return
