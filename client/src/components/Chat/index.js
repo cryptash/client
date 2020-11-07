@@ -1,5 +1,9 @@
 import {Component} from '../../core/Component/Component'
 import App from '../../core/App'
+import {Sidebar} from './Sidebar/Sidebar'
+import './index.scss'
+import {DialogRouter} from './Dialog/DialogRouter'
+import {Preloader} from '../Preloader'
 
 class Home extends Component {
   constructor(props) {
@@ -10,6 +14,7 @@ class Home extends Component {
       user_id: '',
       picture_url: '',
       chats: [],
+      ready: false,
       socket: new WebSocket('ws://localhost:9000'),
     }
   }
@@ -19,22 +24,21 @@ class Home extends Component {
           JSON.stringify({action: 'register', jwt: this.state.token})
       )
     }
-    this.state.socket.onmessage = function(event) {
+    this.state.socket.onmessage = (event) => {
       const response = JSON.parse(event.data)
       console.dir(response)
       if (response.data.message === 'Successful connection') {
         console.warn(`Socket: Successful connection`)
       }
+      if (response.action === 'new_message') {
+        this.fetchData()
+      }
     }
   }
-  componentDidMount() {
-    this.bindSocket()
+  fetchData() {
     fetch('http://localhost:9000/api/users/getInfo', {
       method: 'POST',
-      body: JSON.stringify({
-        username: this.state.login,
-        password: this.state.password,
-      }),
+      body: JSON.stringify({}),
       headers: {
         'Authorization': this.state.token,
         'Content-Type': 'application/json',
@@ -44,19 +48,31 @@ class Home extends Component {
         .then((res) => {
           console.log(res)
           if (res.statusCode !== 200) {
-            alert(res.message)
+            console.error(res)
           } else {
-            this.setState({...res.response})
+            this.setState({...res.response, ready: true})
             console.log(this.state)
           }
         })
   }
+  componentDidMount() {
+    this.bindSocket()
+    this.fetchData()
+  }
 
   render() {
+    if (!this.state.ready) {
+      return App.createElement(Preloader)
+    }
+    const vSidebar = App.createElement(Sidebar, {
+      ...this.state,
+    })
     const vMain = App.createElement('div',
         {
           className: 'chat',
-        })
+        }, vSidebar, App.createElement(DialogRouter,
+            {socket: this.state.socket,
+              chats: this.state.chats}))
     return vMain
   }
 }

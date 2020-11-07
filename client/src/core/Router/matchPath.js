@@ -9,8 +9,8 @@ const matchPath = (pathname, options) => {
     }
   }
 
-  const match = new RegExp(`^${path}`).exec(pathname)
-
+  const match = new RegExp(`^${path.split(':')[0]}`).exec(pathname)
+  console.log(match)
   if (!match) {
     return null
   }
@@ -20,7 +20,14 @@ const matchPath = (pathname, options) => {
   if (exact && !isExact) {
     return null
   }
+  let param = {}
+  if (path.includes(':')) {
+    param = {
+      [path.split(':')[1]]: pathname.split(match)[1],
+    }
+  }
   return {
+    param,
     path,
     url,
     isExact,

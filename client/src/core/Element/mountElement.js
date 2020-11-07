@@ -12,6 +12,10 @@ const mountElement = (vElement, parent) => {
       .forEach((name) => {
         domNode[name] = vElement.props[name]
       })
+  if (vElement.props.style !== undefined) {
+    Object.keys(vElement.props.style)
+        .forEach((sKey) => domNode.style[sKey] = vElement.props.style[sKey])
+  }
   if (vElement.props.children) {
     vElement.props.children.forEach((child) => {
       render(child, domNode)

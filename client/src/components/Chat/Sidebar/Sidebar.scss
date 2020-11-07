@@ -1,0 +1,111 @@
+.sidebar {
+  width: 30%;
+  height: 100%;
+  border-right: 2px solid #ecf0f1;
+  max-width: 320px;
+  min-width: 230px;
+  &-header {
+    height: 60px;
+    width: 100.5%;
+    display: flex;
+    border-bottom: 2px solid #ecf0f1;
+    .material-icons-outlined {
+      margin: auto;
+    }
+    &--picture {
+      margin: auto;
+      width: 13%;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      user-select: none;
+      -webkit-user-drag: none;
+      pointer-events: none;
+      max-width: 40px;
+      min-width: 40px;
+      img {
+        width: 100%;
+        height: 40px;
+        border-radius: 50%;
+      }
+      &_span {
+        font-weight: 900;
+        margin: auto;
+        font-size: 18px;
+        color: white;
+      }
+    }
+
+  }
+  .chat-card {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 60px;
+    align-items: center;
+    padding: 7px 5px;
+    font-weight: 400;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background: #F3F7FF;
+    }
+    &--data {
+      width: 87%;
+      &_upper {
+        display: inline-block;
+        width: 90%;
+        padding: 0 10px;
+        height: 40%;
+        align-items: center;
+        &__date {
+          justify-self: flex-end;
+          margin-right: 5px;
+          float: right;
+          opacity: 0.4;
+          font-size: 12px;
+        }
+        &__name {
+          float: left;
+          font-weight: 500;
+          font-size: 14px;
+          margin-left: 5px;
+        }
+      }
+      &_lower {
+        width: 90%;
+        padding: 0 10px;
+        height: 20px;
+        display: inline-block;
+        &__text {
+          margin-left: 5px;
+          float: left;
+        }
+      }
+    }
+    &--picture {
+      width: 13%;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      user-select: none;
+      -webkit-user-drag: none;
+      pointer-events: none;
+      max-width: 40px;
+      min-width: 40px;
+      img {
+        width: 100%;
+        height: 40px;
+        border-radius: 50%;
+      }
+      &_span {
+        font-weight: 900;
+        margin: auto;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+}

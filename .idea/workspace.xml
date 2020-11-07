@@ -11,22 +11,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Chat/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Register/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/chat/createChat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/chat/createChat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/checkAuth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/checkAuth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/getKey.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/getKey.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/messages/send.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/messages/send.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/api/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/register.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/searchUsers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/searchUsers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/api/user/getUserInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/user/getUserInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/lib/randomGradient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/lib/randomGradient.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/models/Chat.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/models/Chat.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/models/Message.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/models/Message.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ciphen/src/models/User.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/models/User.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Preloader/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Preloader/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/logo_purple.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/logo_purple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/DialogRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/DialogRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +59,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/client/src/assets/logo.svg" root0="SKIP_INSPECTION" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
@@ -63,7 +78,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../doomer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,6 +89,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\cryptash\client\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\cryptash\client\src\utils\encryption" />
       <recent name="C:\Projects\cryptash\client\src\core\Text" />
@@ -133,20 +151,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/../ciphen/src/index.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/register.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/login.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/searchUsers.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/getKey.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/checkAuth.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/lib/db_connect.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/models/User.model.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/user/getUserInfo.js" />
-        <option value="$PROJECT_DIR$/../ciphen/src/api/messages/send.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -172,6 +176,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="222" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604139294961" />
+    <state x="573" y="132" key="#com.intellij.ide.util.MemberChooser" timestamp="1604787570095">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="573" y="132" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1604787570095" />
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1604149983916">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -204,15 +212,19 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="615" y="325" key="VCS.ChangelistChooser/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149855743" />
+    <state x="544" y="171" key="refactoring.ChangeSignatureDialog" timestamp="1604671327747">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="544" y="171" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1604671327747" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1604432680834">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604141510373" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604432680834" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604438865029">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604784785367">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604438865029" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604397319635" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604784785367" />
   </component>
 </project>

@@ -7,14 +7,14 @@ const render = (vElement, parent) => {
     return null
   }
   if (typeof vElement.type === 'string') {
-    console.log('element', vElement)
+    // constnsole.log('element', vElement)
     return mountElement(vElement, parent)
   }
   if (typeof vElement === 'string') {
-    console.log('text', vElement)
+    // console.log('text', vElement)
     return mountTextElement(vElement, parent)
   } else if (typeof vElement.type === 'function') {
-    console.log('component', vElement)
+    // console.log('component', vElement)
     return mountComponent(vElement, parent)
   }
 }
