@@ -35,7 +35,7 @@ class Login extends App.Component {
   }
 
   render() {
-    console.log(this.state)
+    // console.log(this.state)
     const title = App.createElement('h1',
         {className: 'login--title'},
         'Welcome to Cryptash')

@@ -10,7 +10,7 @@ const matchPath = (pathname, options) => {
   }
 
   const match = new RegExp(`^${path.split(':')[0]}`).exec(pathname)
-  console.log(match)
+  // console.log(match)
   if (!match) {
     return null
   }

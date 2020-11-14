@@ -1,29 +1,31 @@
 import App from '../../../core/App'
-import {Route} from '../../../core/Router/Router'
+import {Route} from '../../../core/Router/Route'
 import {Dialog} from './Dialog'
 
 class DialogRouter extends App.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      key: '',
+    }
   }
   componentDidMount() {
-    window.addEventListener('popstate', () => {
-      console.log('render')
+    window.addEventListener('hashchange', () => {
       this.updateComponent()
     })
   }
 
   render() {
-    console.log('render')
     const vMain = App.createElement('div', {className: 'dialog'},
         App.createElement(Route, {
-          path: '#/im/:username',
-          exact: false,
-          props: {
-            socket: this.props.socket,
-            chats: this.props.chats,
+          render: (match) => {
+            return App.createElement(Dialog, {
+              ...match,
+              ...this.props,
+            })
           },
-          component: Dialog,
+          path: '#/im/:id',
+          exact: false,
         })
     )
     return vMain

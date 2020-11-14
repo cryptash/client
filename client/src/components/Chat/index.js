@@ -4,6 +4,8 @@ import {Sidebar} from './Sidebar/Sidebar'
 import './index.scss'
 import {DialogRouter} from './Dialog/DialogRouter'
 import {Preloader} from '../Preloader'
+// import {Dialog} from './Dialog/Dialog'
+// import {DialogRouter} from './Dialog/DialogRouter'
 
 class Home extends Component {
   constructor(props) {
@@ -24,16 +26,19 @@ class Home extends Component {
           JSON.stringify({action: 'register', jwt: this.state.token})
       )
     }
-    this.state.socket.onmessage = (event) => {
+    this.state.socket.addEventListener('message', (event) => {
       const response = JSON.parse(event.data)
-      console.dir(response)
+      // console.dir(response)
+      if (!response.data) {
+        return
+      }
       if (response.data.message === 'Successful connection') {
         console.warn(`Socket: Successful connection`)
       }
       if (response.action === 'new_message') {
         this.fetchData()
       }
-    }
+    })
   }
   fetchData() {
     fetch('http://localhost:9000/api/users/getInfo', {
@@ -46,12 +51,12 @@ class Home extends Component {
     })
         .then((res) => res.json())
         .then((res) => {
-          console.log(res)
+          // console.log(res)
           if (res.statusCode !== 200) {
             console.error(res)
           } else {
             this.setState({...res.response, ready: true})
-            console.log(this.state)
+            // console.log(this.state)
           }
         })
   }
@@ -67,12 +72,22 @@ class Home extends Component {
     const vSidebar = App.createElement(Sidebar, {
       ...this.state,
     })
+    // if (!window.location.hash.includes('/im/')) {
+    //   return App.createElement('div',
+    //       {
+    //         className: 'chat',
+    //       }, vSidebar)
+    // }
     const vMain = App.createElement('div',
         {
           className: 'chat',
         }, vSidebar, App.createElement(DialogRouter,
-            {socket: this.state.socket,
-              chats: this.state.chats}))
+            {
+              socket: this.state.socket,
+              chats: this.state.chats,
+              picture_url: this.state.picture_url,
+              username: this.state.username,
+            }))
     return vMain
   }
 }

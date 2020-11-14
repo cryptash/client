@@ -1,14 +1,16 @@
-import {Component} from '../../../core/Component/Component'
-import App from '../../../core/App'
+import App from '../../core/App'
 
-class SidebarHeader extends Component {
+class UserPicture extends App.Component {
   constructor(props) {
     super(props)
   }
   render() {
-    // console.log(this.props)
+    console.log(this.props.picture_url)
+    if (!this.props.picture_url) {
+      return null
+    }
     const picture_div = App.createElement('div', {
-      className: 'sidebar-header--picture',
+      className: 'profile-pic',
     })
     if (this.props.picture_url.includes('http')) {
       const profile_img = App.createElement('img', {
@@ -25,11 +27,7 @@ class SidebarHeader extends Component {
       }
       picture_div.props.children.push(profile_text)
     }
-    const vMain = App.createElement('header', {
-      className: 'sidebar-header',
-    }, picture_div,
-    )
-    return vMain
+    return picture_div
   }
 }
-export {SidebarHeader}
+export {UserPicture}

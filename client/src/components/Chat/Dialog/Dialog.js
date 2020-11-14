@@ -1,54 +1,154 @@
 import App from '../../../core/App'
 import './Dialog.scss'
 import {encryptMessage} from '../../../utils/encryption/encrypt'
+import {MessageInput} from './MessageInput'
+import {Message} from './Message'
+import {matchPath} from '../../../core/Router/matchPath'
+import {Preloader} from '../../Preloader'
 
 class Dialog extends App.Component {
   constructor(props) {
     super(props)
+    const match = matchPath(window.location.hash, {
+      path: '#/im/:id',
+      exact: false,
+    })
+    // if (match === null) {
+    //   window.history.replaceState({}, null,
+    //       '#/im/' + this.props.chats[0].chat_id)
+    //   window.dispatchEvent(new Event('hashchange'))
+    // }
+    console.log(match)
     this.state = {
       content: '',
+      messages: [],
+      pub_key: '',
+      chatId: this.props.param.id,
+      pg: 0,
+      user2_picture_url: '',
+      user2_username: '',
     }
   }
-  sendMessage() {
-    console.log({
-      action: 'send_message',
-      chatId: this.props.param.username,
-      content: this.state.content,
-      token: localStorage.getItem('token'),
-    })
-    const chat = this.props.chats.filter(
-        (x) => x.chat_id === this.props.param.username
-    )[0]
-    const p_key = chat['Users'][0].pub_key
-    console.log(chat)
+  sendMessage(text) {
+    // console.log({
+    //   action: 'send_message',
+    //   chatId: this.props.param.id,
+    //   content: text,
+    //   token: localStorage.getItem('token'),
+    // })
     this.props.socket.send(JSON.stringify(
         {
           action: 'send_message',
-          chatId: this.props.param.username,
+          chatId: this.state.chatId,
           content: encryptMessage(
               localStorage.getItem('key'),
               {
-                text: this.state.content,
+                text,
               },
-              p_key
+              this.state.pub_key
           ),
           token: localStorage.getItem('token'),
         }
     ))
   }
-  render() {
+  sendMessagesRequest(pg) {
+    this.props.socket.send(
+        JSON.stringify(
+            {
+              action: 'get_messages',
+              chat_id: this.state.chatId,
+              pg: pg,
+              jwt: localStorage.getItem('token'),
+            }
+        )
+    )
+  }
+  initialize() {
+    const chat = this.props.chats.filter(
+        (x) => x.chat_id === this.props.param.id
+    )[0]
     console.log(this.props)
-    const input = App.createElement('input', {
-      type: 'text',
-      oninput: (e) => {
-        this.setState({content: e.target.value})
-      },
+    this.setState({
+      chatId: this.props.param.id,
+      pub_key: chat['Users'][0].pub_key,
+      user2_picture_url: chat['Users'][0].picture_url,
+      user2_username: chat['Users'][0].username,
     })
-    const button = App.createElement('button', {
-      onclick: () => this.sendMessage(),
+  }
+  componentDidMount() {
+    this.initialize()
+    window.addEventListener('hashchange', () => {
+      this.initialize()
+      this.sendMessagesRequest(0)
     })
+    this.props.socket.addEventListener('message', (event) => {
+      const content = JSON.parse(event.data)
+      if (content.action === 'get_messages') {
+        if (content.statusCode === 200) {
+          if (this.state.pg === 0) {
+            this.setState({
+              messages: content.messages,
+            })
+          } else {
+            this.setState({
+              messages: [...this.state.messages, ...content.messages],
+            })
+          }
+        }
+      }
+      if (content.action === 'new_message') {
+        if (content.data.message.chat_id === this.state.chatId) {
+          this.setState({
+            messages: [...this.state.messages, content.data.message],
+          })
+        }
+      }
+    })
+    if (this.props.socket.readyState === 0) {
+      this.props.socket.addEventListener('open', () => {
+        this.sendMessagesRequest(0)
+      })
+    } else {
+      this.sendMessagesRequest(0)
+    }
+  }
+
+  render() {
+    const messages = []
+    if (!messages) {
+      return App.createElement(Preloader)
+    }
+    this.state.messages.forEach((e) => {
+      messages.push(
+          App.createElement(Message,
+              {
+                ...e,
+                picture_url: [
+                  this.props.picture_url,
+                  this.state.user2_picture_url,
+                ],
+                username: [
+                  this.props.username,
+                  this.state.user2_username,
+                ],
+                pub_key: this.state.pub_key,
+              })
+      )
+    })
+    const messagesList = App.createElement('div', {
+      className: 'dialog-messages scrollbar--light-reversed',
+    }, ...messages)
     const vMain = App.createElement('div',
-        {}, input, button)
+        {
+          className: '',
+        },
+        messagesList,
+        App.createElement(
+            MessageInput,
+            {
+              sendMessage: (text) => this.sendMessage(text),
+            }
+        ))
     return vMain
   }
 }

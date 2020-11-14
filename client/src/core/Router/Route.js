@@ -19,7 +19,7 @@ class Route extends Component {
       render,
     } = this.props
     const match = matchPath(window.location.hash, this.props)
-    console.log(window.location.hash)
+    // console.log(match)
     if (!match) {
       return null
     }

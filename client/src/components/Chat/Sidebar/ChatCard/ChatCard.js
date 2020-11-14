@@ -8,7 +8,6 @@ class ChatCard extends Component {
   }
   render() {
     const {data} = this.props
-    console.log(data)
     const picture_div = App.createElement('div', {
       className: 'chat-card--picture',
     })

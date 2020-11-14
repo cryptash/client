@@ -40,7 +40,7 @@ class Register extends Component {
     })
         .then((res) => res.json())
         .then((res) => {
-          console.log(res)
+          // console.log(res)
           if (res.statusCode !== 200) {
             alert(res.message)
           } else {
@@ -49,7 +49,7 @@ class Register extends Component {
         })
   }
   render() {
-    console.log(this.state)
+    // console.log(this.state)
     const usernameRegexp = /^[a-zA-Z0-9_-]{3,16}$/
     // eslint-disable-next-line max-len
     const passwordRegexp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,31}$/ // 8 to 31 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character

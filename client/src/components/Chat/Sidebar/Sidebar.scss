@@ -79,8 +79,15 @@
         height: 20px;
         display: inline-block;
         &__text {
+          overflow: hidden;
           margin-left: 5px;
           float: left;
+          width: 80%;
+          text-align: left;
+          overflow-wrap: break-word;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          height: 20px;
         }
       }
     }

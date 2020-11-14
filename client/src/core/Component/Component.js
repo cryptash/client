@@ -29,7 +29,6 @@ class Component {
     if (this._pendingState !== prevState) {
       this.state = this._pendingState
     }
-
     this._pendingState = null
     const nextElement = this.render()
     this._currentElement = nextElement

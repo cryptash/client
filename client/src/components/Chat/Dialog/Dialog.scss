@@ -1,3 +1,131 @@
 .dialog {
-  width: 70%;
+  width: calc(100% - 320px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &-messages {
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+    padding-bottom: 20px;
+    .dialog-message {
+      max-width: 375px;
+      width: auto;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      &--upper {
+        display: flex;
+        flex-direction: row;
+      }
+      .profile-pic {
+        min-height: 20px;
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 2px;
+        align-self: flex-end;
+        span {
+          font-size: 10px;
+        }
+      }
+      &--date {
+        font-family: Roboto, serif;
+        font-style: normal;
+        margin-right: auto;
+        margin-left: 35px;
+        margin-top: 5px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        color: #202020;
+        mix-blend-mode: normal;
+        opacity: 0.4;
+      }
+      &_bubble {
+        min-height: 25px;
+        height: fit-content;
+        box-shadow: 0 5px 5px rgba(54, 116, 255, 0.196733);
+        font-family: Roboto, sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        width: fit-content;
+        padding: 10px 10px;
+        text-align: left;
+        display: flex;
+        margin: auto;
+        span {
+          width: fit-content;
+          margin: auto;
+        }
+      }
+      &.toMe {
+        align-self: flex-start;
+        margin-left: 10px;
+        .dialog-message_bubble {
+          background: #3674FF;
+          border-radius: 12px 12px 12px 0;
+          color: white;
+          margin-left: 10px;
+        }
+      }
+      &.fromMe {
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-left: auto;
+        .dialog-message--upper {
+          flex-direction: row-reverse;
+          align-self: flex-end;
+          margin-left: auto;
+        }
+        .dialog-message--date {
+          margin-left: auto;
+          margin-right: 35px;
+        }
+        .dialog-message_bubble {
+          background: #FFFFFF;
+          color: black;
+          border: 1px solid #ECECEC;
+          margin-right: 10px;
+          border-radius: 12px 12px 0 12px;
+        }
+      }
+    }
+  }
+  &-input {
+    height: 50px;
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 5px;
+    form {
+      width: 90%;
+      height: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #E9E9E9;
+      border-radius: 4px;
+      input {
+        width: 90%;
+        border: none;
+        height: 80%;
+        margin: auto;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      margin: auto;
+      text-align: center;
+      padding: 3px 0 0;
+    }
+
+  }
 }
