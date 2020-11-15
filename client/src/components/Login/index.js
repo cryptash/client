@@ -72,6 +72,23 @@ class Login extends App.Component {
         this.setState({password: e.target.value})
       },
     })
+    const keyLabel = App.createElement('label', {
+      'for': 'c-pass',
+    },
+    App.createElement('i',
+        {className: 'material-icons-outlined'},
+        'vpn_key outline'),
+    App.createElement('span', {}, 'Private Key'))
+    const keyInput = App.createElement('input', {
+      type: 'password',
+      name: 'c-key',
+      className: 'key--input',
+      validate: 'Password is required',
+      placeholder: 'Private Key',
+      oninput: (e) => {
+        localStorage.setItem('key', e.target.value)
+      },
+    })
     const loginButton = App.createElement('input', {
       type: 'submit',
       className: 'login--button',
@@ -83,7 +100,8 @@ class Login extends App.Component {
     })
     const form = App.createElement('form',
         {},
-        loginLabel, loginInput, passLabel, passInput, loginButton)
+        loginLabel, loginInput, passLabel,
+        passInput, keyLabel, keyInput, loginButton)
 
     const toSignUp = App.createElement('div', {
       className: 'login--signup',
