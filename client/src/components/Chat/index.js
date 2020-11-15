@@ -17,7 +17,7 @@ class Home extends Component {
       picture_url: '',
       chats: [],
       ready: false,
-      socket: new WebSocket('ws://localhost:9000'),
+      socket: new WebSocket('wss://' + window.location.host),
     }
   }
   bindSocket() {
