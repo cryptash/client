@@ -18,7 +18,6 @@ class Dialog extends App.Component {
     //       '#/im/' + this.props.chats[0].chat_id)
     //   window.dispatchEvent(new Event('hashchange'))
     // }
-    console.log(match)
     this.state = {
       content: '',
       messages: [],
@@ -30,12 +29,6 @@ class Dialog extends App.Component {
     }
   }
   sendMessage(text) {
-    // console.log({
-    //   action: 'send_message',
-    //   chatId: this.props.param.id,
-    //   content: text,
-    //   token: localStorage.getItem('token'),
-    // })
     this.props.socket.send(JSON.stringify(
         {
           action: 'send_message',
@@ -67,7 +60,6 @@ class Dialog extends App.Component {
     const chat = this.props.chats.filter(
         (x) => x.chat_id === this.props.param.id
     )[0]
-    console.log(this.props)
     this.setState({
       chatId: this.props.param.id,
       pub_key: chat['Users'][0].pub_key,

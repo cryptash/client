@@ -6,7 +6,6 @@ class SidebarHeader extends Component {
     super(props)
   }
   render() {
-    // console.log(this.props)
     const picture_div = App.createElement('div', {
       className: 'sidebar-header--picture',
     })

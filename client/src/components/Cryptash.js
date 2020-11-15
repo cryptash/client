@@ -16,7 +16,6 @@ class Cryptash extends Component {
     }
   }
   setToken(token) {
-    console.log(token)
     this.setState({token, isLoggined: true})
     localStorage.setItem('token', token)
     window.history.replaceState({}, null, ' ')

@@ -25,7 +25,6 @@ class Login extends App.Component {
     })
         .then((res) => res.json())
         .then((res) => {
-          console.log(res)
           if (res.statusCode !== 200) {
             alert(res.message)
           } else {
@@ -35,7 +34,6 @@ class Login extends App.Component {
   }
 
   render() {
-    // console.log(this.state)
     const title = App.createElement('h1',
         {className: 'login--title'},
         'Welcome to Cryptash')

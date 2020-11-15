@@ -15,7 +15,6 @@ class Message extends App.Component {
       ).text
     } catch (e) {
       // window.dispatchEvent(new Event('hashchange'))
-      console.log(e)
       return ' '
     }
   }

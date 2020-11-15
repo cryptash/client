@@ -19,7 +19,6 @@ class ChatCard extends Component {
     })
         .then((res) => res.json())
         .then((res) => {
-          console.log(res)
           if (res.statusCode !== 200) {
             alert(res.message)
           } else {
@@ -31,7 +30,6 @@ class ChatCard extends Component {
   }
   render() {
     const data = this.props
-    console.log(data)
     const picture_div = App.createElement('div', {
       className: 'chat-card--picture',
     })

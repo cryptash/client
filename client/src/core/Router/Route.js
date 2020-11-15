@@ -8,7 +8,6 @@ class Route extends Component {
   }
   componentDidMount() {
     window.addEventListener('hashchange', () => {
-      console.log('pop')
       this.updateComponent()
     })
   }
@@ -19,7 +18,6 @@ class Route extends Component {
       render,
     } = this.props
     const match = matchPath(window.location.hash, this.props)
-    // console.log(match)
     if (!match) {
       return null
     }

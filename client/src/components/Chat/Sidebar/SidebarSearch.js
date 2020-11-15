@@ -9,7 +9,6 @@ class SidebarSearch extends App.Component {
   }
   handleSearch(e) {
     if (e.target.value.length < 3) return
-    console.log(e.target.value)
     fetch('https://' + window.location.host + '/api/users/search', {
       method: 'POST',
       body: JSON.stringify({
@@ -22,12 +21,10 @@ class SidebarSearch extends App.Component {
     })
         .then((res) => res.json())
         .then((res) => {
-          console.log(res)
           if (res.statusCode !== 200) {
             alert(res.message)
           } else {
             this.props.setChats(res.data.users)
-            console.log(this.state.users)
           }
         })
   }

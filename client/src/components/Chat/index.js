@@ -51,12 +51,10 @@ class Home extends Component {
     })
         .then((res) => res.json())
         .then((res) => {
-          // console.log(res)
           if (res.statusCode !== 200) {
             console.error(res)
           } else {
             this.setState({...res.response, ready: true})
-            // console.log(this.state)
           }
         })
   }

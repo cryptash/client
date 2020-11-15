@@ -5,7 +5,6 @@ class UserPicture extends App.Component {
     super(props)
   }
   render() {
-    console.log(this.props.picture_url)
     if (!this.props.picture_url) {
       return null
     }

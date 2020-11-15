@@ -13,14 +13,12 @@ export class Sidebar extends App.Component {
     }
   }
   setChats(newChats) {
-    console.log(newChats)
     this.setState({
       chats: [...this.state.chats, ...newChats],
     })
   }
   componentDidMount() {}
   render() {
-    // console.log(this.props)
     const chat_cards = []
     this.props.chats.sort((a, b) => {
       return new Date(b.messageAt) - new Date(a.messageAt)
@@ -30,7 +28,6 @@ export class Sidebar extends App.Component {
       data['Users'][0]['username'].includes(this.state.query) ||
       data['Users'][1]['username'].includes(this.state.query)
       ) {
-        console.log(data)
         chat_cards.push(App.createElement(ChatCard, {
           'username': !data['Users'] ?
             data.username :

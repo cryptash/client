@@ -11,7 +11,6 @@ class Link extends Component {
     window.history.replaceState({}, null, '#/'+to)
   }
   render() {
-    console.log(this.props)
     const {to, children} = this.props
     return App.createElement('a', {
       href: to,
