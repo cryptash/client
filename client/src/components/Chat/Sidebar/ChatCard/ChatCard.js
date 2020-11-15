@@ -61,7 +61,9 @@ class ChatCard extends Component {
         {
           className: 'chat-card',
           onclick: (e) => {
+            if (window.location.hash.includes(data.chat_id)) return
             window.history.replaceState({}, '', `#/im/${data.chat_id}`)
+            window.dispatchEvent(new Event('hashchange'))
             window.dispatchEvent(new Event('hashchange'))
           },
         },

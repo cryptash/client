@@ -14,6 +14,7 @@ class Message extends App.Component {
           this.props.pub_key,
       ).text
     } catch (e) {
+      // window.dispatchEvent(new Event('hashchange'))
       console.log(e)
       return ' '
     }

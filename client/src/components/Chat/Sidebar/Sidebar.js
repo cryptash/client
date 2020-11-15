@@ -2,6 +2,7 @@ import App from '@core/App'
 import {ChatCard} from './ChatCard/ChatCard'
 import './Sidebar.scss'
 import {SidebarHeader} from './SidebarHeader'
+import {SidebarSearch} from './SidebarSearch'
 
 export class Sidebar extends App.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export class Sidebar extends App.Component {
       picture_url: this.props.picture_url,
       username: this.props.username,
     }),
+    App.createElement(SidebarSearch, {}),
     ...chat_cards,
     )
     return vMain

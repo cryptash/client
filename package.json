@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:client": "cd client && cross-env NODE_ENV=development webpack serve",
     "lint:fix": "eslint \"{,!(node_modules)/**/}*.{js,jsx}\" --fix",
-    "build:client": "cross-env NODE_ENV=production webpack --mode production"
+    "build:client": "cd client && cross-env NODE_ENV=production webpack --mode production"
   },
   "eslintConfig": {
     "extends": "google",

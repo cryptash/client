@@ -11,34 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/chat/createChat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/chat/createChat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/checkAuth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/checkAuth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/getKey.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/getKey.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/messages/send.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/messages/send.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/register.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarSearch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/api/searchUsers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/searchUsers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/user/getUserInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/user/getUserInfo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/lib/randomGradient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/lib/randomGradient.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/models/Chat.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/models/Chat.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/models/Message.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/models/Message.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/models/User.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/models/User.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/logo_purple.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/logo_purple.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/DialogRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/DialogRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Message.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Element/mountElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,14 +30,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="SCSS File" />
         <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ciphen" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -84,7 +65,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
     <property name="ts.external.directory.path" value="C:\Projects\ciphen\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -99,6 +80,16 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration name="build:client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../ciphen/package.json" />
       <command value="run" />
@@ -131,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build:client" />
         <item itemvalue="npm.pretty" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start:client" />
@@ -146,6 +138,14 @@
       <option name="presentableId" value="Default" />
       <updated>1603641737150</updated>
       <workItem from="1603641738327" duration="49741000" />
+      <workItem from="1605257181113" duration="7180000" />
+      <workItem from="1605431834770" duration="11000" />
+      <workItem from="1605431892833" duration="89000" />
+      <workItem from="1605432016294" duration="4000" />
+      <workItem from="1605432229024" duration="36000" />
+      <workItem from="1605432343918" duration="167000" />
+      <workItem from="1605432823492" duration="53000" />
+      <workItem from="1605432944605" duration="1047000" />
     </task>
     <servers />
   </component>
@@ -162,6 +162,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -188,43 +189,51 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603643331818" />
-    <state width="1516" height="247" key="GridCell.Tab.0.bottom" timestamp="1604332735307">
+    <state width="1516" height="247" key="GridCell.Tab.0.bottom" timestamp="1604841827470">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604332735307" />
-    <state width="1516" height="247" key="GridCell.Tab.0.center" timestamp="1604332735306">
+    <state width="1516" height="247" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604841827470" />
+    <state width="1516" height="247" key="GridCell.Tab.0.center" timestamp="1604841827470">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604332735306" />
-    <state width="1516" height="247" key="GridCell.Tab.0.left" timestamp="1604332735306">
+    <state width="1516" height="247" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604841827470" />
+    <state width="1516" height="247" key="GridCell.Tab.0.left" timestamp="1604841827469">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604332735306" />
-    <state width="1516" height="247" key="GridCell.Tab.0.right" timestamp="1604332735306">
+    <state width="1516" height="247" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604841827469" />
+    <state width="1516" height="247" key="GridCell.Tab.0.right" timestamp="1604841827470">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604332735306" />
-    <state x="277" y="62" key="SettingsEditor" timestamp="1603827168966">
+    <state width="1516" height="247" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604841827470" />
+    <state x="558" y="55" key="RollbackChangesDialog" timestamp="1605016031811">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1603827168966" />
+    <state x="558" y="55" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605016031811" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1605432840389">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605432840389" />
     <state x="615" y="325" key="VCS.ChangelistChooser" timestamp="1604149855743">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="615" y="325" key="VCS.ChangelistChooser/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149855743" />
+    <state x="459" y="9" width="617" height="816" key="find.popup" timestamp="1605116053895">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="459" y="9" width="617" height="816" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1605116053895" />
     <state x="544" y="171" key="refactoring.ChangeSignatureDialog" timestamp="1604671327747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="171" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1604671327747" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1604432680834">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1605025727154">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604141510373" />
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1604432680834" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604784785367">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605025727154" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605263789101">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604438865029" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604784785367" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605263789101" />
   </component>
 </project>
