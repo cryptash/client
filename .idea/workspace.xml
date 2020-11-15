@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,11 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/api/searchUsers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/api/searchUsers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ciphen/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ciphen/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +63,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ciphen/client" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,13 +74,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\cryptash\client\src\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\ciphen\client" />
+      <recent name="C:\Projects\ciphen" />
+      <recent name="C:\Projects\ciphen\dist\client" />
+      <recent name="C:\Projects\ciphen\dist\" />
       <recent name="C:\Projects\cryptash\client\src\utils\encryption" />
-      <recent name="C:\Projects\cryptash\client\src\core\Text" />
-      <recent name="C:\Projects\cryptash\client\src\core\Component" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\ciphen\client" />
+      <recent name="C:\Projects\cryptash\client\src\assets" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -141,7 +152,8 @@
       <workItem from="1605432229024" duration="36000" />
       <workItem from="1605432343918" duration="167000" />
       <workItem from="1605432823492" duration="53000" />
-      <workItem from="1605432944605" duration="1525000" />
+      <workItem from="1605432944605" duration="10051000" />
+      <workItem from="1605447852777" duration="1971000" />
     </task>
     <servers />
   </component>
@@ -181,26 +193,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149983916" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1603643331818">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1605445266703">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603643331818" />
-    <state width="1516" height="247" key="GridCell.Tab.0.bottom" timestamp="1604841827470">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605445266703" />
+    <state width="757" height="213" key="GridCell.Tab.0.bottom" timestamp="1605449012895">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604841827470" />
-    <state width="1516" height="247" key="GridCell.Tab.0.center" timestamp="1604841827470">
+    <state width="757" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605449012895" />
+    <state width="757" height="213" key="GridCell.Tab.0.center" timestamp="1605449012894">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604841827470" />
-    <state width="1516" height="247" key="GridCell.Tab.0.left" timestamp="1604841827469">
+    <state width="757" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1605449012894" />
+    <state width="757" height="213" key="GridCell.Tab.0.left" timestamp="1605449012894">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604841827469" />
-    <state width="1516" height="247" key="GridCell.Tab.0.right" timestamp="1604841827470">
+    <state width="757" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1605449012894" />
+    <state width="757" height="213" key="GridCell.Tab.0.right" timestamp="1605449012895">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1516" height="247" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604841827470" />
+    <state width="757" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1605449012895" />
     <state x="558" y="55" key="RollbackChangesDialog" timestamp="1605016031811">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -213,19 +225,19 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="615" y="325" key="VCS.ChangelistChooser/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149855743" />
-    <state x="459" y="9" width="617" height="816" key="find.popup" timestamp="1605116053895">
+    <state x="459" y="9" width="617" height="816" key="find.popup" timestamp="1605448025121">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="459" y="9" width="617" height="816" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1605116053895" />
+    <state x="459" y="9" width="617" height="816" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1605448025121" />
     <state x="544" y="171" key="refactoring.ChangeSignatureDialog" timestamp="1604671327747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="171" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1604671327747" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1605025727154">
+    <state x="425" y="189" key="run.anything.popup" timestamp="1605437908234">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604141510373" />
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605025727154" />
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605437908234" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605263789101">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

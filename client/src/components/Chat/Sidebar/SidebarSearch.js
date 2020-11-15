@@ -10,7 +10,7 @@ class SidebarSearch extends App.Component {
   handleSearch(e) {
     if (e.target.value.length < 3) return
     console.log(e.target.value)
-    fetch('http://localhost:9000/api/users/search', {
+    fetch('https://' + window.location.host + '/api/users/search', {
       method: 'POST',
       body: JSON.stringify({
         query: e.target.value,
@@ -26,23 +26,28 @@ class SidebarSearch extends App.Component {
           if (res.statusCode !== 200) {
             alert(res.message)
           } else {
-            this.setState({
-              users: res.data.users,
-            })
+            this.props.setChats(res.data.users)
             console.log(this.state.users)
           }
         })
   }
   render() {
+    const icon = App.createElement('span', {
+      className: 'material-icons-outlined',
+    }, 'search')
     const input = App.createElement('input', {
-      className: 'sidebar-search--input',
+      className: 'sidebar-search--input---text',
       oninput: (e) => {
         this.handleSearch(e)
       },
+      placeholder: 'Search',
     })
+    const inputDiv = App.createElement('div', {
+      className: 'sidebar-search--input',
+    }, icon, input)
     return App.createElement('div', {
       className: 'sidebar-search',
-    }, input)
+    }, inputDiv)
   }
 }
 export {SidebarSearch}

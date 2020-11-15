@@ -115,4 +115,29 @@
       }
     }
   }
+  &-search {
+    width: 100%;
+    &--input {
+      background: #F7F8F9;
+      border-radius: 2px;
+      margin: 5px auto;
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      height: 35px;
+      span {
+        color: #CBCBCB;
+        font-size: 18px;
+        margin: auto;
+      }
+      input {
+        width: 90%;
+        background: none;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@ class Login extends App.Component {
   }
 
   handleLogin() {
-    fetch('http://localhost:9000/api/login', {
+    fetch('https://' + window.location.host + '/api/login', {
       method: 'POST',
       body: JSON.stringify({
         username: this.state.login,

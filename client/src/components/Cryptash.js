@@ -23,7 +23,7 @@ class Cryptash extends Component {
   }
   componentDidMount() {
     if (localStorage.getItem('token')) {
-      fetch('http://localhost:9000/api/checkAuth', {
+      fetch('https://' + window.location.host + '/api/checkAuth', {
         method: 'POST',
         body: JSON.stringify({token: localStorage.getItem('token')}),
         headers: {

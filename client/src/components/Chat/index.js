@@ -41,7 +41,7 @@ class Home extends Component {
     })
   }
   fetchData() {
-    fetch('http://localhost:9000/api/users/getInfo', {
+    fetch('https://' + window.location.host + '/api/users/getInfo', {
       method: 'POST',
       body: JSON.stringify({}),
       headers: {
