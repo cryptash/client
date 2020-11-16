@@ -13,8 +13,14 @@ export class Sidebar extends App.Component {
     }
   }
   setChats(newChats) {
+    const seen = new Set()
+    const arr = [...this.state.chats, ...newChats]
     this.setState({
-      chats: [...this.state.chats, ...newChats],
+      chats: arr.filter((el) => {
+        const duplicate = seen.has(el.id)
+        seen.add(el.id)
+        return !duplicate
+      }),
     })
   }
   componentDidMount() {}
@@ -41,6 +47,9 @@ export class Sidebar extends App.Component {
         }))
       }
     })
+    const chatCards = App.createElement('div', {
+      className: 'sidebar-chats scrollbar--light-reversed',
+    }, ...chat_cards)
     const vMain = App.createElement('div', {
       className: 'sidebar',
     }, App.createElement(SidebarHeader, {
@@ -50,7 +59,7 @@ export class Sidebar extends App.Component {
     App.createElement(SidebarSearch, {
       setChats: (newChats) => this.setChats(newChats),
     }),
-    ...chat_cards,
+    chatCards,
     )
     return vMain
   }

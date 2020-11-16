@@ -27,7 +27,7 @@ class Register extends Component {
   handleRegister() {
     alert('Write down the key!')
     alert(this.state.private_key)
-    fetch('https://' + window.location.host + '/api/register', {
+    fetch('http://localhost:9000/api/register', {
       method: 'POST',
       body: JSON.stringify({
         username: this.state.login,

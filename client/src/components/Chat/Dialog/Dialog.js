@@ -3,21 +3,11 @@ import './Dialog.scss'
 import {encryptMessage} from '../../../utils/encryption/encrypt'
 import {MessageInput} from './MessageInput'
 import {Message} from './Message'
-import {matchPath} from '../../../core/Router/matchPath'
 import {Preloader} from '../../Preloader'
 
 class Dialog extends App.Component {
   constructor(props) {
     super(props)
-    const match = matchPath(window.location.hash, {
-      path: '#/im/:id',
-      exact: false,
-    })
-    // if (match === null) {
-    //   window.history.replaceState({}, null,
-    //       '#/im/' + this.props.chats[0].chat_id)
-    //   window.dispatchEvent(new Event('hashchange'))
-    // }
     this.state = {
       content: '',
       messages: [],

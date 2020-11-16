@@ -7,7 +7,7 @@ class ChatCard extends Component {
     super(props)
   }
   createChat() {
-    fetch('https://' + window.location.host + '/api/chat/create', {
+    fetch('http://localhost:9000/api/chat/create', {
       method: 'POST',
       body: JSON.stringify({
         user_id: this.props.user_id,

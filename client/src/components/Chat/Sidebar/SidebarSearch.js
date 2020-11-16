@@ -9,7 +9,7 @@ class SidebarSearch extends App.Component {
   }
   handleSearch(e) {
     if (e.target.value.length < 3) return
-    fetch('https://' + window.location.host + '/api/users/search', {
+    fetch('http://localhost:9000/api/users/search', {
       method: 'POST',
       body: JSON.stringify({
         query: e.target.value,

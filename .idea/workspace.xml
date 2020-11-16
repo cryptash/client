@@ -15,14 +15,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a24c5351-54b0-4e8e-986c-7a2814e6b455" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Dialog/Dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/ChatCard/ChatCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/Sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/Sidebar/SidebarSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Cryptash.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cryptash.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Router/Link.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/Link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Router/Route.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/Route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Router/matchPath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/core/Utils/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/core/Utils/render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/encryption/generateKeyPair.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/encryption/generateKeyPair.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../doomer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../doomer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +153,7 @@
       <workItem from="1605432343918" duration="167000" />
       <workItem from="1605432823492" duration="53000" />
       <workItem from="1605432944605" duration="10051000" />
-      <workItem from="1605447852777" duration="3120000" />
+      <workItem from="1605447852777" duration="5690000" />
     </task>
     <servers />
   </component>
@@ -224,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="615" y="325" key="VCS.ChangelistChooser/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604149855743" />
-    <state x="459" y="9" width="617" height="816" key="find.popup" timestamp="1605459562858">
+    <state x="459" y="9" width="617" height="816" key="find.popup" timestamp="1605460098892">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="459" y="9" width="617" height="816" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1605459562858" />
+    <state x="459" y="9" width="617" height="816" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1605460098892" />
     <state x="544" y="171" key="refactoring.ChangeSignatureDialog" timestamp="1604671327747">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -237,10 +238,10 @@
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604141510373" />
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605437908234" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605263789101">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1605460087371">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1604438865029" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605263789101" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1605460087371" />
   </component>
 </project>

@@ -38,6 +38,10 @@
     }
 
   }
+  &-chats {
+    overflow-y: auto;
+    max-height: calc(100vh - 108px);
+  }
   .chat-card {
     display: flex;
     flex-direction: row;

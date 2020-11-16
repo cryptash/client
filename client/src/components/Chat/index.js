@@ -17,7 +17,7 @@ class Home extends Component {
       picture_url: '',
       chats: [],
       ready: false,
-      socket: new WebSocket('wss://' + window.location.host),
+      socket: new WebSocket('ws://localhost:9000' ),
     }
   }
   bindSocket() {
@@ -41,7 +41,7 @@ class Home extends Component {
     })
   }
   fetchData() {
-    fetch('https://' + window.location.host + '/api/users/getInfo', {
+    fetch('http://localhost:9000/api/users/getInfo', {
       method: 'POST',
       body: JSON.stringify({}),
       headers: {
